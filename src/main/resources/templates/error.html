@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Security Error</title>
+</head>
+<body style="background:BLACK;margin-top:1%;text-align:center;">
+<div style="margin-top:1%;text-align:center;">
+    <h1 style="color:RED;font-weight:bold;text-align:center;" th:text="${errorMessage}">Error Message Here</h1>
+</div>
+<div th:if="${gif!=null}" style="margin-top:1%;text-align:center;">
+    <img style="margin-top:1" th:src="@{${gif}}"/>
+</div>
+</body>
+</html>
